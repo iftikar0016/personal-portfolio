@@ -3,7 +3,7 @@
 ## Summary
 This web application was generated to fulfill the following requirement:
 
-Design a personal portfolio website with sections for About Me, Projects showcase with live demos, Skills with proficiency bars, and a Contact form. Use modern design with smooth scroll and interactive elements
+can you change the name of the repo to "personal-portfolio-test-ai"
 
 ## Setup
 This is a static web application that requires no installation. Simply open `index.html` in a web browser.
@@ -28,4 +28,4 @@ This application is deployed via GitHub Pages and is accessible at the Pages URL
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
-*Generated on 2025-10-15 - Round 1*
+*Generated on 2025-10-15 - Round 2*
