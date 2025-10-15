@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+            color: #ddd;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #about {
+            background-color: #fff;
+        }
+
+        #projects {
+            background-color: #f9f9f9;
+        }
+
+        #skills {
+            background-color: #fff;
+        }
+
+        #contact {
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* About Me */
+        #about .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #about img {
+            width: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Skills */
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill-bar {
+            background-color: #ddd;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            background-color: #007bff;
+            height: 100%;
+            color: #fff;
+            text-align: right;
+            padding-right: 10px;
+            border-radius: 10px;
+        }
+
+        /* Contact Form */
+        #contact form {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #contact button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #contact button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            #about .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #about img {
+                margin-bottom: 20px;
+            }
+
+            #contact form {
+                width: 90%;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <img src="placeholder-image.jpg" alt="Your Photo">
+            <div>
+                <h1>About Me</h1>
+                <p>
+                    Hi, I'm [Your Name], a passionate web developer with a love for creating beautiful and functional websites.  I have experience in front-end and back-end development, with a strong focus on user experience.  I am always eager to learn new technologies and contribute to exciting projects. This is just a basic template. I can build highly dynamic web applications. Feel free to explore my portfolio!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1: E-commerce Website</h3>
+                <p>
+                    Developed a fully functional e-commerce website with user authentication, product catalog, shopping cart, and payment gateway integration.
+                </p>
+                <a href="#" target="_blank">Live Demo</a>
+            </div>
+
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2: Task Management App</h3>
+                <p>
+                    Created a task management application with features like task creation, assignment, prioritization, and progress tracking.
+                </p>
+                <a href="#" target="_blank">Live Demo</a>
+            </div>
+
+            <div class="project">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project 3: Personal Portfolio Website (This one!)</h3>
+                <p>
+                    Designed and developed a personal portfolio website to showcase my skills and projects to potential employers and clients.
+                </p>
+                <a href="#" target="_blank">Live Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 95%">95%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%">90%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%">80%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3>React</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%">75%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <h3>Node.js</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%">70%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 [Your Name] | All rights reserved
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent default form submission
+
+            //Basic form Validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !message) {
+                alert("Please fill out all fields.");
+                return;
+            }
+
+            // Here you would typically handle the form submission via AJAX
+            // For example, sending the data to a server-side script
+            // or using a service like EmailJS.
+
+            // Simulate a successful submission for demo purposes
+            alert('Message sent successfully!  (This is a demo - no actual email was sent.)');
+            document.getElementById('contactForm').reset(); //Clear the form
+        });
+
+
+        //Example interactive element with Javascript.
+        const projectsSection = document.getElementById('projects');
+        projectsSection.addEventListener('mouseover', () => {
+            projectsSection.style.backgroundColor = '#e9ecef'; //Light Gray Hover effect
+        });
+
+        projectsSection.addEventListener('mouseout', () => {
+            projectsSection.style.backgroundColor = '#f9f9f9'; //Restore original background color
+        });
+
+
+
+    </script>
+
+</body>
+</html>
